@@ -40,6 +40,14 @@ monitor reset halt
 load
 continue
 
+MinGW:
+
+```sh
+./bootstrap
+./configure CFLAGS="$CFLAGS -Wno-error=sign-compare -Wno-error=pointer-sign"  --disable-internal-libjaylink --disable-jlink
+make
+```
+
 
 Welcome to OpenOCD!
 ===================

@@ -51,7 +51,7 @@ extern struct jtag_interface parport_interface;
 #if BUILD_DUMMY == 1
 extern struct jtag_interface dummy_interface;
 #endif
-extern struct jtag_interface jtag_tcp_interface;
+//extern struct jtag_interface jtag_tcp_interface;
 #if BUILD_FTDI == 1
 extern struct jtag_interface ftdi_interface;
 #endif
@@ -157,7 +157,7 @@ struct jtag_interface *jtag_interfaces[] = {
 #if BUILD_DUMMY == 1
 		&dummy_interface,
 #endif
-		&jtag_tcp_interface,
+//		&jtag_tcp_interface,
 #if BUILD_FTDI == 1
 		&ftdi_interface,
 #endif

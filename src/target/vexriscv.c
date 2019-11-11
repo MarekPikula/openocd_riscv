@@ -15,12 +15,17 @@
 #include "vexriscv.h"
 #include "semihosting_common.h"
 #include <stdio.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
+
+//#include <sys/socket.h>
+//#include <netinet/in.h>
+//#include <arpa/inet.h>
+//#include <netinet/tcp.h>
+#include <winsock.h>
+#include <winsock2.h>
+#include "vexriscv-ext.h"
+
 #include <string.h>
-#include <arpa/inet.h>
 #include <fcntl.h>
-#include <netinet/tcp.h>
 #include <yaml.h>
 #include <errno.h>
 #include "algorithm.h"
